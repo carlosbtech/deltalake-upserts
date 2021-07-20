@@ -40,7 +40,7 @@ Spark: 3.1.2 https://spark.apache.org/downloads.html
 
 ## notebook/deltalake-example.ipynb
 
-This project comes with the objective of clarifying, in a practical way, how the Delta Lake Upserts logic works and how we can "kill" Data WareHouse with the new and modern Lake House Architecture, for this I have made available a jupyter notebook, in which we read data in json format, which is related to users of a system. Our main goal is to read these files in Json format and convert them to a Delta Table. After that we can access metadata that is generated inside a directory called _delta_log, which we can access through the DeltaTable.forPath method. After instantiating the Delta Table, we managed to merge the new data using whenMatchedUpdateAll using the condition that we are going to compare and finally update our Delta Table.
+This project comes with the objective of clarifying, in a practical way, how the Delta Lake Upserts logic works and how we can make the adoption of the new and modern Lake House Architecture, for this I made available a notebook jupyter, in which we read data in format json, which are related to users of a system. Our main goal is to read these files in Json format and convert them to a Delta Table. After that we can access metadata that is generated inside a directory called _delta_log, which we can access through the DeltaTable.forPath method. After instantiating the Delta Table, we managed to merge the new data using whenMatchedUpdateAll using the condition that we are going to compare and finally update our Delta Table.
 
 ![image](https://miro.medium.com/max/1400/0*5XnRRdbrbuuNGFzJ.png)
 
